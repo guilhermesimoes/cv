@@ -1,3 +1,8 @@
+$(".print").click(function() {
+    window.print();
+    return false;
+});
+
 /* Smooth scroll */
 $(".header-link, .current-section").click(function() {
     var target = $(this).attr("href");

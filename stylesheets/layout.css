@@ -135,20 +135,34 @@ h2:hover > .header-link {
 }
 
 .current-section,
-.gotop {
+.gotop,
+.print {
   position: fixed;
-  right: 40px;
   text-shadow: 0 0 5px white;
   background: -webkit-radial-gradient(center, ellipse cover, rgba(245, 245, 245, 1) 0, rgba(245, 245, 245, 0) 100%);
   background: radial-gradient(center, ellipse cover, rgba(245, 245, 245, 1) 0, rgba(245, 245, 245, 0) 100%);
 }
 
 .current-section {
+  right: 40px;
   top: 40px;
 }
 
 .gotop {
+  right: 40px;
   bottom: 40px;
+}
+
+.print {
+  display: none;
+  left: 40px;
+  top: 40px;
+}
+
+@media only screen and (min-width: 1024px) and (min-height: 768px) {
+  .print {
+    display: block;
+  }
 }
 
 .cat {
@@ -271,10 +285,29 @@ h2:hover > .header-link {
     page-break-after: avoid;
   }
 
+  a:after {
+    content:" (" attr(href) ") ";
+    font-size: 0.8em;
+    font-weight:normal;
+  }
+
+  a[href^="mailto"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
   .current-section,
   .gotop,
-  .header-link {
+  .header-link,
+  .print {
     display: none !important;
+  }
+
+  .em-link,
+  .em-link:visited,
+  .em-link:hover,
+  .em-link:focus {
+    border: 0;
   }
 
   .bottom-shadow:after,
