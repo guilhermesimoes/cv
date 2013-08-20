@@ -44,6 +44,20 @@ section p {
   -ms-text-justify: newspaper;
 }
 
+.button-link {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+}
+
+.button-link::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
 .edu-item,
 .edu-institution,
 .project-item {
