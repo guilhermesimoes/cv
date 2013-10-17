@@ -117,37 +117,6 @@ h2:hover > .header-link {
   display: inline;
 }
 
-.top-shadow,
-.bottom-shadow {
-  -webkit-transition: opacity 1s ease-out;
-  transition: opacity 1s ease-out;
-  opacity: 0;
-}
-
-.top-shadow:before {
-  content: "";
-  position: fixed;
-  top: -10px;
-  left: -10px;
-  width: 110%;
-  height: 10px;
-  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .6);
-  box-shadow: 0 0 15px rgba(0, 0, 0, .6);
-  z-index: 100;
-}
-
-.bottom-shadow:after {
-  content: "";
-  position: fixed;
-  bottom: -10px;
-  left: -10px;
-  width: 110%;
-  height: 10px;
-  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .7);
-  box-shadow: 0 0 20px rgba(0, 0, 0, .7);
-  z-index: 100;
-}
-
 .current-section,
 .gotop,
 .print {
@@ -300,9 +269,9 @@ h2:hover > .header-link {
   }
 
   a:after {
-    content:" (" attr(href) ") ";
+    content: " (" attr(href) ") ";
     font-size: 0.8em;
-    font-weight:normal;
+    font-weight: normal;
   }
 
   a[href^="mailto"]:after,
@@ -322,12 +291,6 @@ h2:hover > .header-link {
   .em-link:hover,
   .em-link:focus {
     border: 0;
-  }
-
-  .bottom-shadow:after,
-  .top-shadow:before {
-    -webkit-box-shadow: none;
-    box-shadow: none;
   }
 }
 

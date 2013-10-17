@@ -38,21 +38,6 @@ $(window).scroll(function() {
     return false;
 });
 
-/* Show shadow to indicate the user can scroll */
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 50) {
-        $(".top-shadow").css({ "opacity": 1 });
-    } else {
-        $(".top-shadow").css({ "opacity": 0 });
-    }
-    if ($("body").height() - $("body").scrollTop() - $(window).height() > 50) {
-        $(".bottom-shadow").css({ "opacity": 1 });
-    } else {
-        $(".bottom-shadow").css({ "opacity": 0 });
-    }
-    return false;
-}).trigger('scroll');
-
 /* Based on: http://css-tricks.com/snippets/jquery/detect-first-visible-element/ */
 var text, id, lastText, $current = $(".current-section");
 $(window).scroll(function(){
