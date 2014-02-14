@@ -274,10 +274,7 @@ h2:hover > .header-link {
     font-weight: normal;
   }
 
-  .current-section,
-  .gotop,
-  .header-link,
-  .print {
+  .no-print {
     display: none !important;
   }
 
