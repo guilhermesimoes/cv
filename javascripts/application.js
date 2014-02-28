@@ -1,3 +1,8 @@
+$(document).ready(function() {
+    document.body.style.paddingBottom = 0.2 * $(window).height() + "px";
+});
+
+
 $(".print").click(function() {
     window.print();
     return false;
