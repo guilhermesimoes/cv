@@ -1,22 +1,3 @@
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #F0F0F0;
-  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-::-webkit-scrollbar-thumb {
-  background: #AAA;
-  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #999;
-}
-::-webkit-scrollbar-thumb:active {
-  background: #777;
-  -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
 body {
   background: #FAFAFA;
   font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
