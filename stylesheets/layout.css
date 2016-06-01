@@ -68,8 +68,6 @@ hr {
   padding: 2px 7px;
   margin-bottom: 4px;
   border: 1px solid #222;
-  -moz-border-radius: 4px;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
 }
 
@@ -94,17 +92,15 @@ hr {
   border-bottom: none;
 }
 
-h2:hover > .header-link {
+.section-header:hover > .header-link {
   display: inline;
 }
 
 .current-section,
-.gotop,
-.print {
+.gotop-button,
+.print-button {
   position: fixed;
   text-shadow: 0 0 5px white;
-  background: -webkit-radial-gradient(center, ellipse cover, rgba(245, 245, 245, 1) 0, rgba(245, 245, 245, 0) 100%);
-  background: radial-gradient(center, ellipse cover, rgba(245, 245, 245, 1) 0, rgba(245, 245, 245, 0) 100%);
 }
 
 .current-section {
@@ -112,19 +108,19 @@ h2:hover > .header-link {
   top: 40px;
 }
 
-.gotop {
+.gotop-button {
   right: 40px;
   bottom: 40px;
 }
 
-.print {
+.print-button {
   display: none;
   left: 40px;
   top: 40px;
 }
 
 @media only screen and (min-width: 1024px) and (min-height: 768px) {
-  .print {
+  .print-button {
     display: block;
   }
 }
@@ -159,7 +155,7 @@ h2:hover > .header-link {
     text-align: left;
   }
 
-  .gotop {
+  .gotop-button {
     right: 20px;
     bottom: 20px;
   }
@@ -204,7 +200,7 @@ h2:hover > .header-link {
     text-align: left;
   }
 
-  .gotop {
+  .gotop-button {
     right: 20px;
     bottom: 20px;
   }
@@ -233,7 +229,7 @@ h2:hover > .header-link {
     font-size: 14px;
   }
 
-  .gotop {
+  .gotop-button {
     right: 10px;
     bottom: 10px;
   }

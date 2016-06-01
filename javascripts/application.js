@@ -6,14 +6,14 @@ function setBottomPadding() {
     document.body.style.paddingBottom = 0.2 * $(window).height() + "px";
 }
 
-$(".print").click(function() {
+$(".js-print-button").click(function() {
     window.print();
-    return false;
 });
 
-/* Smooth scroll */
-$(".header-link, .current-section").click(function() {
-    var target = $(this).attr("href");
+/* Smooth scroll to target */
+$(".js-header-link").click(function() {
+    var target = this.getAttribute("href");
+
     $.scrollTo(target, {
         duration: 250,
         easing: "linear",
@@ -24,26 +24,24 @@ $(".header-link, .current-section").click(function() {
     return false;
 });
 
-/* Scroll to top */
-$(".gotop").click(function() {
+/* Smooth scroll to top */
+$(".js-gotop-button").click(function() {
     $.scrollTo(0, {
         duration: 500,
         easing: "linear",
         onAfter: function() {
-            window.location.hash = "";
+            history.replaceState(null, "", window.location.pathname);
         }
     });
-    return false;
 });
 
 /* Display scroll to top button when necessary */
 $(window).scroll(function() {
     if ($(window).scrollTop() > 300) {
-        $(".gotop").fadeIn();
+        $(".js-gotop-button").fadeIn();
     } else {
-        $(".gotop").fadeOut();
+        $(".js-gotop-button").fadeOut();
     }
-    return false;
 });
 
 /* Based on: http://css-tricks.com/snippets/jquery/detect-first-visible-element/ */
