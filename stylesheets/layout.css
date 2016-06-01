@@ -96,16 +96,10 @@ hr {
   display: inline;
 }
 
-.current-section,
 .gotop-button,
 .print-button {
   position: fixed;
   text-shadow: 0 0 5px white;
-}
-
-.current-section {
-  right: 40px;
-  top: 40px;
 }
 
 .gotop-button {
@@ -159,11 +153,6 @@ hr {
     right: 20px;
     bottom: 20px;
   }
-
-  .current-section {
-    right: 20px;
-    top: 20px;
-  }
 }
 
 @media only screen and (max-width: 479px) {
@@ -203,16 +192,6 @@ hr {
   .gotop-button {
     right: 20px;
     bottom: 20px;
-  }
-
-  .current-section,
-  :visited.current-section {
-    right: 0;
-    top: 0;
-    padding: 0 5px;
-    color: #fff;
-    text-shadow: none;
-    background: #000;
   }
 }
 
