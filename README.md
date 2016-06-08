@@ -1,6 +1,6 @@
 # My Curriculum Vitæ
 
-This is just the code of my [online CV](http://guilhermesimoes.github.io/cv/).
+This is just the code of my [online CV](https://guilhermesimoes.github.io/cv/).
 
 ## Thank You!
 
