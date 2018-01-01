@@ -6,7 +6,7 @@ function setBottomPadding() {
     document.body.style.paddingBottom = 0.2 * $(window).height() + "px";
 }
 
-$(".js-print-button").click(function() {
+document.querySelector(".js-print-button").addEventListener("click", function () {
     window.print();
 });
 
