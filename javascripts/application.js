@@ -1,45 +1,54 @@
-$(document).ready(function() {
-    setBottomPadding();
-});
-
 function setBottomPadding() {
-    document.body.style.paddingBottom = 0.2 * $(window).height() + "px";
+    var body = document.body;
+    body.style.paddingBottom = 0.2 * body.offsetHeight + 'px';
 }
 
-document.querySelector(".js-print-button").addEventListener("click", function () {
+function printCv() {
     window.print();
-});
+}
 
-/* Smooth scroll to target */
-$(".js-header-link").click(function() {
-    var target = this.getAttribute("href");
-
-    $.scrollTo(target, {
-        duration: 250,
-        easing: "linear",
-        onAfter: function() {
-            window.location.hash = target;
-        }
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
+
+    history.replaceState(null, "", window.location.pathname);
+
     return false;
-});
+}
 
-/* Smooth scroll to top */
-$(".js-gotop-button").click(function() {
-    $.scrollTo(0, {
-        duration: 500,
-        easing: "linear",
-        onAfter: function() {
-            history.replaceState(null, "", window.location.pathname);
-        }
+function scrollToTarget(event) {
+    event.preventDefault();
+
+    var target = this.getAttribute('href');
+
+    document.querySelector(target).scrollIntoView({
+        behavior: 'smooth',
     });
-});
 
-/* Display scroll to top button when necessary */
-$(window).scroll(function() {
-    if ($(window).scrollTop() > 300) {
-        $(".js-gotop-button").fadeIn();
-    } else {
-        $(".js-gotop-button").fadeOut();
-    }
+    history.replaceState(null, "", target);
+}
+
+function onIntersection(entries) {
+    var entry = entries[0];
+    goTopButton.classList.toggle('opaque', !entry.isIntersecting);
+}
+
+var goTopButton = document.querySelector('.js-gotop-button');
+var printButton = document.querySelector('.js-print-button');
+var headerLinks = document.querySelectorAll('.js-header-link');
+var skillsHeader = document.querySelector('#summary');
+
+setBottomPadding();
+printButton.addEventListener('click', printCv);
+goTopButton.addEventListener('click', scrollToTop);
+for (var i = 0, len = headerLinks.length; i < len; i++) {
+    headerLinks[i].addEventListener('click', scrollToTarget);
+}
+
+var observer = new IntersectionObserver(onIntersection, {
+  root: null,   // default is the viewport
+  threshold: .5 // percentage of target's visible area. Triggers "onIntersection"
 });
+observer.observe(skillsHeader);

@@ -105,6 +105,12 @@ hr {
 .gotop-button {
   right: 40px;
   bottom: 40px;
+  transition: opacity .4s;
+  opacity: 0;
+}
+
+.opaque {
+  opacity: 1;
 }
 
 .print-button {
@@ -115,12 +121,12 @@ hr {
 
 @media
   /* ----------- Non-Retina Screens ----------- */
-  screen 
+  screen
   and (min-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1)
 ,
   /* ----------- Retina Screens ----------- */
-  screen 
+  screen
   and (min-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi)
