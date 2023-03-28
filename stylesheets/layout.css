@@ -1,13 +1,17 @@
 body {
-  background: #FAFAFA;
-  font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
   margin: 40px 16% 40px 0;
   margin-bottom: 18em;
   margin-bottom: 50vh;
+  font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  background: #FAFAFA;
+  color: #444;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: inherit;
+  color: #181818;
+  font-weight: normal;
 }
 
 h1 {
@@ -63,24 +67,28 @@ hr {
 
 .skills {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .skills .tag {
   display: inline-block;
   padding: 2px 7px;
   margin-bottom: 4px;
+  line-height: 1;
   border: 1px solid #222;
   border-radius: 4px;
 }
 
 .em-link,
 .em-link:visited {
+  color: #333;
   text-decoration: none;
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted #333;
 }
 
 .em-link:hover,
 .em-link:focus {
+  color: black;
   text-decoration: none;
   border-bottom: 1px solid black;
 }
