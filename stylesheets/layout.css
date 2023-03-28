@@ -1,3 +1,12 @@
+:root {
+  --background-color: hsl(0, 0%, 98%);
+  --text-color-lightness: 27%;
+  --text-color: hsl(0, 0%, var(--text-color-lightness));
+  --header-text-color: hsl(0, 0%, calc(var(--text-color-lightness) - 18%));
+  --link-text-color: hsl(0, 0%, calc(var(--text-color-lightness) - 7%));
+  --link-text-hover-color: hsl(0, 0%, calc(var(--text-color-lightness) - 27%));
+}
+
 body {
   margin: 40px 16% 40px 0;
   margin-bottom: 18em;
@@ -5,12 +14,12 @@ body {
   font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
-  background: #FAFAFA;
-  color: #444;
+  background: var(--background-color);
+  color: var(--text-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #181818;
+  color: var(--header-text-color);
   font-weight: normal;
 }
 
@@ -54,7 +63,7 @@ section p {
 hr {
   margin: 0 0 20px 0;
   border-style: dashed;
-  border-color: #444;
+  border-color: var(--text-color);
 }
 
 .overview .detail {
@@ -75,22 +84,22 @@ hr {
   padding: 2px 7px;
   margin-bottom: 4px;
   line-height: 1;
-  border: 1px solid #222;
+  border: 1px solid var(--text-color);
   border-radius: 4px;
 }
 
 .em-link,
 .em-link:visited {
-  color: #333;
+  color: var(--link-text-color);
   text-decoration: none;
-  border-bottom: 1px dotted #333;
+  border-bottom: 1px dotted var(--link-text-color);
 }
 
 .em-link:hover,
 .em-link:focus {
-  color: black;
+  color: var(--link-text-hover-color);
   text-decoration: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--link-text-hover-color);
 }
 
 .header-link {
@@ -109,7 +118,7 @@ hr {
 .gotop-button,
 .print-button {
   position: fixed;
-  text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px var(--background-color);
 }
 
 .gotop-button {
