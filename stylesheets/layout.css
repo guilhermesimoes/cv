@@ -104,20 +104,22 @@ a:visited {
   text-decoration: none;
 }
 
-button:hover,
-button:focus,
-a:hover,
-a:focus {
-  color: var(--link-text-hover-color);
-  text-decoration: none;
-}
-
 .em-link {
   border-bottom: 1px dotted var(--link-text-color);
 }
 
-.em-link:hover {
-  border-bottom: 1px solid var(--link-text-hover-color);
+@media (hover: hover) {
+  button:hover,
+  button:focus,
+  a:hover,
+  a:focus {
+    color: var(--link-text-hover-color);
+    text-decoration: none;
+  }
+
+  .em-link:hover {
+    border-bottom: 1px solid var(--link-text-hover-color);
+  }
 }
 
 .header-link {
