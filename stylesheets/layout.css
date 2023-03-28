@@ -50,7 +50,7 @@ section p {
   -ms-text-justify: newspaper;
 }
 
-.button-link {
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -59,7 +59,7 @@ section p {
   cursor: pointer;
 }
 
-.button-link::-moz-focus-inner {
+button::-moz-focus-inner {
   padding: 0;
   border: 0;
 }
@@ -98,17 +98,26 @@ hr {
   border-radius: 4px;
 }
 
-.em-link,
-.em-link:visited {
+button,
+a,
+a:visited {
   color: var(--link-text-color);
   text-decoration: none;
+}
+
+button:hover,
+button:focus,
+a:hover,
+a:focus {
+  color: var(--link-text-hover-color);
+  text-decoration: none;
+}
+
+.em-link {
   border-bottom: 1px dotted var(--link-text-color);
 }
 
-.em-link:hover,
-.em-link:focus {
-  color: var(--link-text-hover-color);
-  text-decoration: none;
+.em-link:hover {
   border-bottom: 1px solid var(--link-text-hover-color);
 }
 
