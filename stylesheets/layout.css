@@ -18,7 +18,6 @@
 }
 
 body {
-  margin: 40px 16% 40px 0;
   margin-bottom: 18em;
   margin-bottom: 50vh;
   font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
@@ -178,9 +177,16 @@ a:focus {
   text-align: right;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    margin-top: 40px;
+    margin-right: 16%;
+  }
+}
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   body {
-    margin: 30px 0;
+    margin-top: 30px;
   }
 
   h2 {
@@ -212,7 +218,7 @@ a:focus {
 
 @media only screen and (max-width: 479px) {
   body {
-    margin: 20px 0 10px 0;
+    margin-top: 20px;
   }
 
   section {
@@ -252,7 +258,7 @@ a:focus {
 
 @media only screen and (max-width: 319px) {
   body {
-    margin: 10px 0;
+    margin-top: 10px;
   }
 
   h4 {
