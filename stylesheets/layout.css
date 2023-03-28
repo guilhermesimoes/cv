@@ -7,6 +7,16 @@
   --link-text-hover-color: hsl(0, 0%, calc(var(--text-color-lightness) - 27%));
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: hsl(212, 15%, 22%);
+    --text-color-lightness: 85%;
+    --header-text-color: hsl(0, 0%, calc(var(--text-color-lightness) + 8%));
+    --link-text-color: hsl(0, 0%, calc(var(--text-color-lightness) + 5%));
+    --link-text-hover-color: hsl(0, 0%, calc(var(--text-color-lightness) + 15%));
+  }
+}
+
 body {
   margin: 40px 16% 40px 0;
   margin-bottom: 18em;
@@ -253,6 +263,7 @@ hr {
 @media print {
   body {
     background: white;
+    color: black;
     margin: 0;
     padding: 0 !important;
   }
