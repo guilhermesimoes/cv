@@ -2,6 +2,8 @@ body {
   background: #FAFAFA;
   font: 18px/25px "Computer Modern Serif", "Georgia", "Times New Roman", serif;
   margin: 40px 16% 40px 0;
+  margin-bottom: 18em;
+  margin-bottom: 50vh;
 }
 
 h1, h2, h3, h4, h5, h6 {

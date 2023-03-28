@@ -1,8 +1,3 @@
-function setBottomPadding() {
-    var body = document.body;
-    body.style.paddingBottom = 0.2 * body.offsetHeight + 'px';
-}
-
 function printCv() {
     window.print();
 }
@@ -40,7 +35,6 @@ var printButton = document.querySelector('.js-print-button');
 var headerLinks = document.querySelectorAll('.js-header-link');
 var skillsHeader = document.querySelector('#summary');
 
-setBottomPadding();
 printButton.addEventListener('click', printCv);
 goTopButton.addEventListener('click', scrollToTop);
 for (var i = 0, len = headerLinks.length; i < len; i++) {
