@@ -175,9 +175,9 @@ a:visited {
 
 .header-link {
   display: none;
-  font-size: 19px;
+  font-size: 0.6em;
+  vertical-align: 0.2em;
   font-weight: 400;
-  vertical-align: bottom;
   text-decoration: none;
   border-bottom: none;
 }
