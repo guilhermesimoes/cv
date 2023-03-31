@@ -43,7 +43,7 @@ body {
 @media (min-width: 700px) {
   .container {
     display: grid;
-    grid-template-columns: [sidebar-start] 4fr [main-start] 8fr [main-end] 4fr;
+    grid-template-columns: [sidebar-start] 4fr [sidebar-end main-start] 8fr [main-end] 4fr;
     grid-column-gap: 0px;
     max-width: 1200px;
     margin: 0 auto;
@@ -58,7 +58,7 @@ body {
   }
 
   .sidebar {
-    grid-column-start: sidebar-start;
+    grid-column-start: sidebar;
   }
 
   .label {
@@ -311,7 +311,7 @@ a:visited {
   }
 
   .container {
-    grid-template-columns: [sidebar-start] 4fr [main-start] 9fr [main-end] 3fr;
+    grid-template-columns: [sidebar-start] 4fr [sidebar-end main-start] 9fr [main-end] 3fr;
   }
 
   h1, h2, h3, h4, h5, h6, ul, ol, img {
