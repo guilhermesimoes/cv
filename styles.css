@@ -18,9 +18,12 @@
 }
 
 body {
+  margin-top: 2em;
   margin-bottom: 18em;
   margin-bottom: 50vh;
-  font: 18px/1.4 "Computer Modern Serif", "Georgia", "Times New Roman", serif;
+  font-family: "Computer Modern Serif", "Georgia", "Times New Roman", serif;
+  font-size: clamp(1rem, calc(0.4em + 1vw), 1.5rem);
+  line-height: 1.4;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
   background: var(--background-color);
@@ -33,19 +36,21 @@ body {
 }
 
 .container {
-  margin: 0 calc(1em + 5%);
+  margin: 0 calc(0.2em + 5vw);
 }
 
 .label {
+  display: block;
+  margin-bottom: 0.2em;
   font-weight: bold;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 580px) {
   .container {
     display: grid;
-    grid-template-columns: [sidebar-start] 4fr [sidebar-end main-start] 8fr [main-end] 4fr;
+    grid-template-columns: [sidebar-start] 5fr [sidebar-end main-start] 8fr [main-end] 3fr;
     grid-column-gap: 0px;
-    max-width: 1200px;
+    max-width: 60em;
     margin: 0 auto;
   }
 
@@ -62,13 +67,14 @@ body {
   }
 
   .label {
-    text-align: right;
+    display: inherit;
     margin-right: 1em;
+    text-align: right;
     font-weight: normal;
   }
 
   .detail {
-    margin-bottom: 10px;
+    margin-bottom: 0.5em;
   }
 }
 
@@ -79,22 +85,23 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.6em;
-  margin-bottom: 16px;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
 }
 
 h2 {
   font-size: 1.7em;
-  margin-bottom: 20px;
+  line-height: 1.2;
+  margin-bottom: 0.8em;
 }
 
 h4 {
   font-size: 1.2em;
+  margin-bottom: 0.2em;
 }
 
 p {
-  margin-bottom: 20px;
-  text-align: justify;
-  -ms-text-justify: newspaper;
+  margin-bottom: 1.2em;
 }
 
 button {
@@ -118,7 +125,7 @@ button::-moz-focus-inner {
 }
 
 hr {
-  margin: 0 0 20px 0;
+  margin: 0 0 1.2em 0;
   border-style: dashed;
   border-color: var(--text-color);
   border-width: 1px 0 0 0;
@@ -126,7 +133,7 @@ hr {
 
 .skills {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 1em;
   list-style: none;
 }
 
@@ -184,8 +191,8 @@ a:visited {
 }
 
 .gotop-button {
-  right: 40px;
-  bottom: 40px;
+  right: 2em;
+  bottom: 2em;
   transition: opacity .4s;
   opacity: 0;
 }
@@ -196,8 +203,8 @@ a:visited {
 
 .print-button {
   display: none;
-  left: 40px;
-  top: 40px;
+  left: 2em;
+  top: 2em;
 }
 
 @media
@@ -217,86 +224,9 @@ a:visited {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    margin-top: 40px;
-  }
-}
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  body {
-    margin-top: 30px;
-  }
-
-  h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  p {
-    font-size: 15px;
-    line-height: 22px;
-  }
-
-  h2,
-  p,
-  ul {
-    margin-bottom: 10px !important;
-  }
-
-  .gotop-button {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-
 @media only screen and (max-width: 479px) {
-  body {
-    margin-top: 20px;
-  }
-
   section {
     text-align: left;
-  }
-
-  h1 {
-    font-size: 40px;
-  }
-
-  h2 {
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  p {
-    font-size: 15px;
-    line-height: 22px;
-  }
-
-  h2,
-  p,
-  ul {
-    margin-bottom: 10px !important;
-  }
-
-  .gotop-button {
-    right: 20px;
-    bottom: 20px;
-  }
-}
-
-@media only screen and (max-width: 319px) {
-  body {
-    margin-top: 10px;
-  }
-
-  h4 {
-    font-size: 17px;
-  }
-
-  .gotop-button {
-    right: 10px;
-    bottom: 10px;
   }
 }
 
