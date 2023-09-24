@@ -118,9 +118,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-.edu-item,
-.edu-institution,
-.project-item {
+.item {
   display: block;
 }
 
