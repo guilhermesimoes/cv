@@ -120,6 +120,7 @@ button::-moz-focus-inner {
 
 .item {
   display: block;
+  margin-bottom: 0.2em;
 }
 
 hr {
