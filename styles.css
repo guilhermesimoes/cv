@@ -149,11 +149,10 @@ button,
 a,
 a:visited {
   color: var(--link-text-color);
-  text-decoration: none;
 }
 
 .em-link {
-  border-bottom: 1px dotted var(--link-text-color);
+  text-decoration: underline dotted var(--link-text-color);
 }
 
 @media (hover: hover) {
@@ -162,11 +161,11 @@ a:visited {
   a:hover,
   a:focus {
     color: var(--link-text-hover-color);
-    text-decoration: none;
   }
 
   .em-link:hover {
-    border-bottom: 1px solid var(--link-text-hover-color);
+    text-decoration-style: solid;
+    text-decoration-color: var(--link-text-hover-color);
   }
 }
 
@@ -261,7 +260,7 @@ a:visited {
   .em-link:visited,
   .em-link:hover,
   .em-link:focus {
-    border: 0;
+    text-decoration: none;
   }
 }
 
