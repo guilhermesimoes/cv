@@ -126,7 +126,7 @@ button::-moz-focus-inner {
 hr {
   margin: 0 0 1.2em 0;
   border-style: dashed;
-  border-color: var(--text-color);
+  border-color: currentColor;
   border-width: 1px 0 0 0;
 }
 
@@ -141,7 +141,7 @@ hr {
   padding: 2px 7px;
   margin-bottom: 4px;
   line-height: 1;
-  border: 1px solid var(--text-color);
+  border: 1px solid currentColor;
   border-radius: 4px;
 }
 
