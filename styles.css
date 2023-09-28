@@ -338,40 +338,40 @@ a:visited {
 
 @font-face {
   font-family: "Computer Modern Serif";
-  src: url("../fonts/cmu_serif_roman.eot");
-  src: url("../fonts/cmu_serif_roman.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/cmu_serif_roman.woff") format("woff"),
-    url("../fonts/cmu_serif_roman.ttf") format("truetype");
+  src: url("fonts/cmu_serif_roman.eot");
+  src: url("fonts/cmu_serif_roman.eot?#iefix") format("embedded-opentype"),
+    url("fonts/cmu_serif_roman.woff") format("woff"),
+    url("fonts/cmu_serif_roman.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Computer Modern Serif";
-  src: url("../fonts/cmu_serif_italic.eot");
-  src: url("../fonts/cmu_serif_italic.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/cmu_serif_italic.woff") format("woff"),
-    url("../fonts/cmu_serif_italic.ttf") format("truetype");
+  src: url("fonts/cmu_serif_italic.eot");
+  src: url("fonts/cmu_serif_italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/cmu_serif_italic.woff") format("woff"),
+    url("fonts/cmu_serif_italic.ttf") format("truetype");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "Computer Modern Serif";
-  src: url("../fonts/cmu_serif_bold_italic.eot");
-  src: url("../fonts/cmu_serif_bold_italic.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/cmu_serif_bold_italic.woff") format("woff"),
-    url("../fonts/cmu_serif_bold_italic.ttf") format("truetype");
+  src: url("fonts/cmu_serif_bold_italic.eot");
+  src: url("fonts/cmu_serif_bold_italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/cmu_serif_bold_italic.woff") format("woff"),
+    url("fonts/cmu_serif_bold_italic.ttf") format("truetype");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "Computer Modern Serif";
-  src: url("../fonts/cmu_serif_bold.eot");
-  src: url("../fonts/cmu_serif_bold.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/cmu_serif_bold.woff") format("woff"),
-    url("../fonts/cmu_serif_bold.ttf") format("truetype");
+  src: url("fonts/cmu_serif_bold.eot");
+  src: url("fonts/cmu_serif_bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/cmu_serif_bold.woff") format("woff"),
+    url("fonts/cmu_serif_bold.ttf") format("truetype");
   font-style: normal;
   font-weight: bold;
 }
