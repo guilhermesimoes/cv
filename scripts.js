@@ -3,13 +3,8 @@ function printCv() {
 }
 
 function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     history.replaceState(null, "", window.location.pathname);
-
     return false;
 }
 
@@ -24,9 +19,5 @@ var skillsHeader = document.querySelector('#summary');
 
 printButton.addEventListener('click', printCv);
 goTopButton.addEventListener('click', scrollToTop);
-
-var observer = new IntersectionObserver(onIntersection, {
-  root: null,   // default is the viewport
-  threshold: .5 // percentage of target's visible area. Triggers "onIntersection"
-});
+var observer = new IntersectionObserver(onIntersection);
 observer.observe(skillsHeader);
