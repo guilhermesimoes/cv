@@ -152,7 +152,7 @@ a:visited {
 }
 
 .em-link {
-  text-decoration: underline dotted var(--link-text-color);
+  text-decoration: underline dotted var(--link-text-color) from-font;
 }
 
 @media (hover: hover) {
