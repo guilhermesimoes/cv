@@ -52,9 +52,9 @@ body {
 @media (min-width: 580px) {
   .container {
     display: grid;
-    grid-template-columns: [sidebar-start] 5fr [sidebar-end main-start] 8fr [main-end] 3fr;
+    grid-template-columns: [sidebar-start] 6fr [sidebar-end main-start] 12fr [main-end] 2fr;
     grid-column-gap: 0px;
-    max-width: 60em;
+    max-width: 52em;
     margin: 0 auto;
   }
 
