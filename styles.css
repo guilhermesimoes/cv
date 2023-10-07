@@ -200,10 +200,12 @@ a:visited {
   bottom: 2em;
   transition: opacity .4s;
   opacity: 0;
+  pointer-events: none;
 }
 
 .opaque {
   opacity: 1;
+  pointer-events: unset;
 }
 
 .print-button {
