@@ -129,13 +129,6 @@ button::-moz-focus-inner {
   margin-bottom: 0.2em;
 }
 
-hr {
-  margin: 0 0 1.2em 0;
-  border-style: dashed;
-  border-color: currentColor;
-  border-width: 1px 0 0 0;
-}
-
 .skills {
   text-align: left;
   margin-bottom: 1em;
@@ -185,6 +178,17 @@ a:visited {
   font-weight: 400;
   text-decoration: none;
   border-bottom: none;
+}
+
+hr {
+  margin: 0 0 1.2em 0;
+  border-style: dashed;
+  border-color: currentColor;
+  border-width: 1px 0 0 0;
+}
+
+.section-header {
+  scroll-margin-top: 0.8em;
 }
 
 .section-header:hover > .header-link {
