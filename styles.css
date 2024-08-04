@@ -180,15 +180,11 @@ a:visited {
   border-bottom: none;
 }
 
-hr {
-  margin: 0 0 1.2em 0;
+.section-header {
+  padding-top: 0.7em;
   border-style: dashed;
   border-color: currentColor;
   border-width: 1px 0 0 0;
-}
-
-.section-header {
-  scroll-margin-top: 0.8em;
 }
 
 .section-header:hover > .header-link {
